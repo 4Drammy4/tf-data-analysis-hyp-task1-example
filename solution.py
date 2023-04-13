@@ -13,8 +13,8 @@ def solution(x_success: int, #покупка
              y_success: int, 
              y_cnt: int) -> bool:
 
-    data1 = [0]*x_cnt
-    data2 = [0]*y_cnt
+    data1 = [0]*int(x_cnt)
+    data2 = [0]*int(y_cnt)
 
     for i in range(x_success):
         idx = random.randint(0, x_cnt-1)
