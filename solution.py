@@ -5,7 +5,7 @@ from scipy.stats import norm
 from statsmodels.stats.weightstats import ztest
 import random
 
-chat_id = 672508499 # Ваш chat ID, не меняйте название переменной
+chat_id = 416934694 # Ваш chat ID, не меняйте название переменной
 
 def solution(x_success: int, #покупка
              x_cnt: int, #Заявка
