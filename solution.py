@@ -35,8 +35,4 @@ def solution(x_success: int, #покупка
     else:
         return True
     
-x_success = 125
-x_cnt = 1000
-y_success = 128
-y_cnt = 1000
-solution (x_success, x_cnt, y_success, y_cnt)
+
