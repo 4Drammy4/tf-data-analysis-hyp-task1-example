@@ -31,7 +31,7 @@ def solution(x_success: int, #покупка
     ttest1 = ztest(data1,data2,0)
     print(ttest1)
 
-    if ttest1[1] < 0.6:
+    if ttest1[1] < 0.06:
         return False
     else:
         return True
