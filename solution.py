@@ -2,7 +2,7 @@ import numpy as np
 import plotly.graph_objects as go
 import pandas as pd
 from scipy.stats import norm
-from statsmodels.stats.weightstats import ztest
+from scipy.stats import ttest_ind
 import random
 
 chat_id = 416934694 # Ваш chat ID, не меняйте название переменной
@@ -27,10 +27,10 @@ def solution(x_success: int, #покупка
             idx = random.randint(0, y_cnt-1)
         data2[idx] = 1
 
-    ztest1 = ztest(data1,data2,0)
-    print(ztest1)
+    ttest1 = ttest_ind(data1,data2,0)
+    print(ttest1)
 
-    if ztest1[1] < 0.06:
+    if ttest1[1] < 0.06:
         return True
     else:
         return False
